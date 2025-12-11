@@ -248,8 +248,17 @@ let check = "rohit"
         // console.log(parseInt(float)); // Make Whole Number
     //parseFloat
         let num = 51 ;
-        console.log(parseFloat(num));
+        // console.log(parseFloat(num));
         
            
-        
+let string = "JavaScript"
+let vowels = 0 ;
+let consonent = 0 ;
+for( let i = 0 ; i < string.length ; i++){
+
+    if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
+    else consonent ++ ;
+}
+        console.log(vowels);
+        console.log(consonent);
         

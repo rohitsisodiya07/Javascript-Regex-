@@ -25,12 +25,23 @@ let check = "rohit"
 // console.log(check.split(""));
 
 
-for( let i = check.length-1 ; i >= 0 ; i--){
-    if( i == 0){
-        console.log(check[i].toUpperCase());    
-    }
-    else console.log(check[i]);  
-}
+// for( let i = check.length-1 ; i >= 0 ; i--){
+//     if( i == 0){
+//         console.log(check[i].toUpperCase());    
+//     }
+//     else console.log(check[i]);  
+// }
 
-let capital = check.charAt(0).toUpperCase() + check.slice(1) ;
-console.log(capital);
+// let capital = check.charAt(0).toUpperCase() + check.slice(1) ;
+// console.log(capital);
+
+let string = "JavaScript"
+let vowels = 0 ;
+let consonent = 0 ;
+for( let i = 0 ; i < string.length ; i++){
+
+    if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
+    else consonent ++ ;
+}
+        console.log(vowels);
+        console.log(consonent);
