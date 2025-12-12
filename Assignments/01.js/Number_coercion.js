@@ -1,9 +1,9 @@
 //1.
-    // console.log('10' - 5);
+    // console.log('10' * 5);//5
     // console.log(typeof('10' - 5)); // Number
     
 //2.
-    // console.log('10' * '2');
+    // console.log('10' * '2');//20
     // console.log(typeof('10' * '2')); // Number
  
 //3.

@@ -27,7 +27,7 @@
     // console.log(typeof('100' + null));//String
   
  //8.
-    // console.log(undefined + ' World'); //Indefined World
+    // console.log(undefined + ' World'); //Undefined World
     // console.log(typeof(undefined + ' World')); // String
 
 //9.
@@ -35,7 +35,7 @@
     // console.log(typeof((function(){}) + ' is a function')); //String
   
 //10. 
-    console.log(5 + 5 + 'a' + 5 + 5); //10a10
+    console.log(5 + 5 + 'a' + 5 + 5); //10a55
     console.log(typeof(5 + 5 + 'a' + 5 + 5));//String
     
     
