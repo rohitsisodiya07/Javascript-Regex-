@@ -251,14 +251,91 @@ let check = "rohit"
         // console.log(parseFloat(num));
         
            
-let string = "JavaScript"
-let vowels = 0 ;
-let consonent = 0 ;
-for( let i = 0 ; i < string.length ; i++){
+// let string = "JavaScript"
+// let vowels = 0 ;
+// let consonent = 0 ;
+// for( let i = 0 ; i < string.length ; i++){
 
-    if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
-    else consonent ++ ;
-}
-        console.log(vowels);
-        console.log(consonent);
+//     if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
+//     else consonent ++ ;
+// }
+//         console.log(vowels);
+//         console.log(consonent);
         
+
+//********************************************** */
+// for ( let i = 1 ; i <= 100 ; i++){
+
+//     if( i % 3 ==0 && i % 5 == 0 ) console.log("FizzBuzz");
+//     else if( i % 3 == 0) console.log("Fizz");
+//     else if( i % 5 == 0 ) console.log("Buzz");
+//     else console.log(i);      
+// }
+//******************************************************* */
+//Check Pallindrome Using Two Pointers
+// let str = "madam" ;
+// let i = 0 ;
+// let j = str.length - 1;
+// let temp = 0 ;
+// while( i < j){
+//     if(str[i] == str[j]) temp = 1 ;
+//     else break ;
+//     i++ ;
+//     j-- ;  
+// }
+// if(temp) console.log("Pallindrome");
+// else console.log("Not Pallindrome");
+
+//***************************************************** */
+// Function
+//     // Function  function-name(arguments){
+        //block of code    
+// }
+//Function Declaration
+// function first() {
+    
+//     console.log("Hello World");
+    
+// }
+//Function Expression[Anonyms Function]
+// let a = function(){
+//     console.log("Without Function Name");   
+// }   
+// // console.log(a());
+// a();
+
+//Arrow Function
+
+// const addVariable = ()=>{
+
+//     console.log("Hello Arrow Function");
+    
+// }
+// addVariable() ;
+
+// const adding = (a, b) =>{
+
+//     return a+b ;
+// }
+// console.log(adding(15, 10));
+
+//Scope
+
+// function myfun(){
+//     var a = 10 ;
+// }
+
+// console.log(a);
+
+// function getcube(a, b){
+//     for( ;  a <= b ; a++){
+//         console.log(a*a*a);   
+//     }
+// }
+
+// getcube(10, 15)
+
+// iife function( ) // Immediately invoke Function Expression
+// ( function () {
+//     console.log("hey");   
+// })();  
