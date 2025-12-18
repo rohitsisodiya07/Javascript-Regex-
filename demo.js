@@ -288,7 +288,7 @@ let check = "rohit"
 
 //***************************************************** */
 // Function
-//     // Function  function-name(arguments){
+//     // Function  function-name(parameters){
         //block of code    
 // }
 //Function Declaration
@@ -339,3 +339,71 @@ let check = "rohit"
 // ( function () {
 //     console.log("hey");   
 // })();  
+
+
+
+// function printnum(num){
+//     for( let i = 1 ; i <= num ; i++)
+//         console.log(i);  
+// }
+// printnum(50);
+
+
+// function checknum(num){
+
+//     while(num>1){
+//             num = num - 2 ;
+//     }
+//     return num==0 ? "Even" : "Odd"
+// }
+// console.log(checknum(255447));
+
+// let nums = parseInt(prompt("Enter Your Number = ")) ;
+// console.log(nums);
+
+
+
+// function sumdigits(num){
+
+//     sum = 0 ;
+//     while(num){
+//         sum = sum + num % 10 ;
+//         num = parseInt(num/10)
+//     }
+//     console.log("Sum = ", sum);
+    
+// }
+// sumdigits(5432412)
+
+
+// function sumeven(num){
+
+//     let evensum = 0 ;
+//     let oddsum = 0 ;
+//     while(num){
+//         let last = num % 10 ;
+//         if( last%2 == 0) evensum += last ;
+//         else oddsum += last ;
+        // num = parseInt(num/10)
+//     }
+//     console.log("Even Sum = ", evensum);
+//     console.log("Odd Sum = ", oddsum);
+    
+// }
+// sumeven(522546025)
+
+
+function checkarm(num){
+
+    let check = num ;
+    let arm = 0 ;
+    while(num){
+
+        let last = num % 10 ;
+        arm = last * last * last + arm ;
+        num = parseInt(num / 10) ;
+    }
+    if( check == arm ) console.log("ArmStrong");
+    else console.log("Not ArmStrong");  
+}
+checkarm(407)
