@@ -31,8 +31,8 @@
     // console.log(typeof(String(null))); //String
     
 //9.
-    // console.log(Boolean(NaN));
-    // console.log(typeof(Boolean(NaN)));
+   //  console.log(Boolean(NaN)); // False
+   //  console.log(typeof(Boolean(NaN))); // Boolean
     
 //10.
     // console.log(parseInt(0.999)); //0
