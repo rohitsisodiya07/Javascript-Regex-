@@ -1,6 +1,5 @@
 // Print digits of numbers line by line.
 
-
 function printNum(num){
 
     while(num){
