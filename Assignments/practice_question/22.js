@@ -1,26 +1,31 @@
 // Write a function to capitalize the first letter of each word in a string.
 
-function convertTitle(str) {
-  word = "";
-  maxWord = "";
-  max = 0;
-  let length;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] == " ") {
-      length = word.length;
-      if (length > max) {
-        max = length;
-        maxWord = word;
-      }
-      word = "";
-    } else word += str[i];
+function capitalWord(str){
+
+  let res = "" ;
+  for( let i = 0 ; i < str.length ; i++){
+
+     if( i == 0 ) res += str[i].toUpperCase() ;
+     else res += str[i] ;
   }
-  length = word.length;
-  if (length > max) {
-    max = length;
-    maxWord = word;
-  }
-  console.log(max);
-  console.log(maxWord);
+  return res ;
 }
-convertTitle("hey i am Rohit Sisodiya");
+
+function getWord(str){
+
+    word = "" ;
+    res = "" ;
+    for( let i = 0 ; i < str.length ; i++){
+
+      if( str[i] == ' '){
+        res += capitalWord(word) ; 
+        res += " " ;   
+        word = "" ;
+      }
+      else word += str[i] ;
+    }
+    res += capitalWord(word) ;
+    console.log(res);
+    
+}
+getWord("i am working as mentor") ;
