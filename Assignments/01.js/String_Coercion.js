@@ -16,6 +16,8 @@
  
  //5.
     // console.log([] + 1 + 2); // 12
+    // console.log([] + 1 ); // 1
+    // console.log(typeof([] + 1 )); // String
     // console.log(typeof([] + 1 + 2)); //String
     
  //6.
@@ -34,9 +36,9 @@
     // console.log((function(){}) + ' is a function'); // function(){} is a function
     // console.log(typeof((function(){}) + ' is a function')); //String
   
-//10. 
-    console.log(5 + 5 + 'a' + 5 + 5); //10a55
-    console.log(typeof(5 + 5 + 'a' + 5 + 5));//String
+// //10. 
+//     console.log(5 + 5 + 'a' + 5 + 5); //10a55
+//     console.log(typeof(5 + 5 + 'a' + 5 + 5));//String
     
     
     

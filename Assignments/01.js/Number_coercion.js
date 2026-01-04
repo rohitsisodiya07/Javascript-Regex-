@@ -1,5 +1,5 @@
 //1.
-    // console.log('10' * 5);//5
+    // console.log('10' - 5);//5
     // console.log(typeof('10' - 5)); // Number
     
 //2.
@@ -7,6 +7,8 @@
     // console.log(typeof('10' * '2')); // Number
  
 //3.
+    // console.log('50' % []); // NaN
+    // console.log(typeof('50' % [])); // Number
     // console.log('50' / []); // Infinity
     // console.log(typeof('50' / [])); // Number
     
