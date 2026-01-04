@@ -1,4 +1,4 @@
-// Write a function to find the second largest digit in a number.
+//13. Write a function to find the second largest digit in a number.
 
 function secondLargest(num) {
   let max = 0,

@@ -1,4 +1,4 @@
-// Write a function to print Fibonacci series up to N terms.
+//9. Write a function to print Fibonacci series up to N terms.
 
 function fibonacci(n) {
   let a = 0,

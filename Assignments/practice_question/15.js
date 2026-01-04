@@ -1,4 +1,4 @@
-// Write a function to find the next palindrome number after a given number.
+//15. Write a function to find the next palindrome number after a given number.
 
 
 function checkpallindrome(number) {

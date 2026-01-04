@@ -1,4 +1,4 @@
-// Write a function to capitalize the first letter of each word in a string.
+//22. Write a function to capitalize the first letter of each word in a string.
 
 function capitalWord(str){
 

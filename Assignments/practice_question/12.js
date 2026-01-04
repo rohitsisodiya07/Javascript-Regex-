@@ -1,4 +1,4 @@
-// Write a function to swap two numbers without using a third variable.
+//12. Write a function to swap two numbers without using a third variable.
 
 function swapNum(n1, n2) {
   console.log(`n1 = ${n1}  n2 = ${n2}`);

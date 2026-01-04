@@ -1,4 +1,4 @@
-// Write a function to find the GCD of two numbers.
+//10. Write a function to find the GCD of two numbers.
 
 function getGCD(num1, num2) {
   let c;

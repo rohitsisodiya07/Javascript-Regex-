@@ -1,4 +1,4 @@
-// Write a function to check whether a string contains a given word
+//17. Write a function to check whether a string contains a given word
 
 function containWord(str, word) {
   temp = "";

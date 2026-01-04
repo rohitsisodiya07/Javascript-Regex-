@@ -1,4 +1,4 @@
-// Write a function to check whether a number is prime.
+//4. Write a function to check whether a number is prime.
 
 function checkPrime(num) {
   for (let i = 2; i * i < num; i++) {

@@ -1,4 +1,4 @@
-// Write a function to reverse a string.
+//16. Write a function to reverse a string.
 
 
 function reverseStr(str){

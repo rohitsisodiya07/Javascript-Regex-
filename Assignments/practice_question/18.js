@@ -1,4 +1,4 @@
-// Write a function to count the number of words in a string.
+//18. Write a function to count the number of words in a string.
 
 function countWord(str){
     count = 0 ;

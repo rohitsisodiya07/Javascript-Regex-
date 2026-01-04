@@ -1,4 +1,4 @@
-// Write a function to replace all spaces in a string with hyphens (-).
+//19. Write a function to replace all spaces in a string with hyphens (-).
 
 
 function removeSpace(str){

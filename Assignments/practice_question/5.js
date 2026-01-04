@@ -1,4 +1,4 @@
-// Write a function to find the smallest digit in a number.
+//5. Write a function to find the smallest digit in a number.
 
 function getSmallest(num) {
   let min = 9;

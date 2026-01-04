@@ -1,4 +1,4 @@
-// Write a function to calculate the LCM of two numbers.
+//11. Write a function to calculate the LCM of two numbers.
 
 function getLCM(num1, num2) {
   let i = 2;

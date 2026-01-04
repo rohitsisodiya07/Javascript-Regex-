@@ -1,4 +1,4 @@
-// Write a function to find the maximum occurring digit in a number.
+//14. Write a function to find the maximum occurring digit in a number.
 
 function maxOccur(num) {
   let count = Array(10).fill(0);

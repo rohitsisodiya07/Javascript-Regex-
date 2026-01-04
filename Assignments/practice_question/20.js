@@ -1,4 +1,4 @@
-// Write a function to count how many times a character appears in a string.
+//20. Write a function to count how many times a character appears in a string.
 
 // function countCharacter(str, ch) {
 //   let count = 0;
