@@ -1,4 +1,4 @@
-// Datatypes
+// Datatypes//NN SS BB U
 // Use of BackTicks[` `]
 let name = "Rohit Sisodiya"
 console.log(`My Name is ${name}`);
