@@ -7,7 +7,7 @@ let surname = "Intern"
 // console.log(name.charAt(2));
 // console.log(name.at(4));
  
-console.log(name.concat(surname));
+// console.log(name.concat(surname));
 // console.log(name.trim());
 // console.log(name.trimStart());
 // console.log(name.trimEnd());
@@ -35,13 +35,24 @@ let check = "rohit"
 // let capital = check.charAt(0).toUpperCase() + check.slice(1) ;
 // console.log(capital);
 
-let string = "JavaScript"
-let vowels = 0 ;
-let consonent = 0 ;
-for( let i = 0 ; i < string.length ; i++){
+// let string = "JavaScript"
+// let vowels = 0 ;
+// let consonent = 0 ;
+// for( let i = 0 ; i < string.length ; i++){
 
-    if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
-    else consonent ++ ;
-}
-        console.log(vowels);
-        console.log(consonent);
+//     if( string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u") vowels++;
+//     else consonent ++ ;
+// }
+//         console.log(vowels);
+//         console.log(consonent);
+
+
+
+
+let str = "Sisodiya" ;
+let l1 = str.length ;
+let str2 = "Rohit " ;
+let l2 = str2.length ;
+let add = l1 + l2 ;
+console.log(str.padStart(add,str2)) ;
+console.log(str.padEnd(add,str2)) ;
