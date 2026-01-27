@@ -14,5 +14,6 @@
         // let float = 45.115 ;
         // console.log(parseInt(float)); // Make Whole Number
     //parseFloat
-        let num = 51 ;
-        console.log(parseFloat(num));
+        // let num = 51 ;
+        // console.log(parseFloat(num));
+

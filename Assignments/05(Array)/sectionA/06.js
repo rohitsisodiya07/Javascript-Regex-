@@ -8,3 +8,4 @@ let num = 10 ;
 
 console.log(Array.isArray(num)); // Return False
 
+ 

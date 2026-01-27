@@ -18,9 +18,9 @@
 //  forEach()
 
     let names = ["Rohit", "Akshay", "Harish"] ;
-    names.forEach( (keys, index) => {
+    names.forEach( (value, index) => {
 
-        console.log(keys); // Values
+        console.log(value); // Values
         console.log(index); // Index
         
     }) // Mostly Used

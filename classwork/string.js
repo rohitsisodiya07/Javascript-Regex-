@@ -7,7 +7,7 @@ let surname = "Intern"
 // console.log(name.charAt(2));
 // console.log(name.at(4));
  
-// console.log(name.concat(surname));
+// console.log(name.concat(surname)); //Add to String
 // console.log(name.trim());
 // console.log(name.trimStart());
 // console.log(name.trimEnd());
@@ -54,5 +54,5 @@ let l1 = str.length ;
 let str2 = "Rohit " ;
 let l2 = str2.length ;
 let add = l1 + l2 ;
-console.log(str.padStart(add,str2)) ;
-console.log(str.padEnd(add,str2)) ;
+// console.log(str.padStart(add,str2)) ;
+// console.log(str.padEnd(add,str2)) ;

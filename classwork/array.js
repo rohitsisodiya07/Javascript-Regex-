@@ -91,11 +91,9 @@
 // function abc(name, ...para) {
 //   console.log(para);
 //   console.log(name);
-  
+
 // }
 // abc("Rohit", 1, 2, 3, 5, 7);
-
-
 
 //Spread
 
@@ -104,7 +102,6 @@
 // }
 // let arr = [10, 20, 30, 40];
 // abc(...arr);
-
 
 // let arr = [10, 20, 30, 40, 50]
 // let arr1 = [...arr] ; // copy one array to another.
@@ -116,8 +113,7 @@
 // let arr3 = [...arr, ...arr1] // combine two arrays.
 // console.log(arr3);
 
-
-// Use of Both 
+// Use of Both
 // function abc(a, b, c, ...para) {
 //   console.log(para, a, b, c);
 // }
@@ -143,8 +139,8 @@
 //********************************************** */
 // let arr = [{ a :1}, {b : 2}] ;
 
-// // let arr1 = [...arr] ;// Changed Because of Shallow Copy 
-// let arr1 = structuredClone(arr) ;// Not Changed Because of Deep Copy 
+// // let arr1 = [...arr] ;// Changed Because of Shallow Copy
+// let arr1 = structuredClone(arr) ;// Not Changed Because of Deep Copy
 // arr[0].a = 5 ;
 // console.log(arr1);
 // console.log(arr);
@@ -153,27 +149,22 @@
 // let arr = [10, 20, 30 , 40, 50] ;
 // let [a, b, c, ...rest] = arr ;
 // console.log(a, b, c, rest);
- 
 
 // let arr = [10, 20, 30] ;
 // arr[10] = 40 ;
 // console.log(arr);
 // console.log(typeof arr);
 
-
-
 // let a = [10, 20 , 30] ;
 // console.log(Array.isArray(a));
 
-
 //*********************************************** */
 // let arr = [10, 20, 30, 40] ;
-// //1.    push()  
+// //1.    push()
 //     // arr.push(50) ;
 //     arr.pop() ;
 //     console.log(arr);
-    
-    
+
 // let arr = [10, 20, 30, 40] ;
 // let arr1 = arr.splice(0, 2, 75) ;
 // console.log(arr);
@@ -184,7 +175,28 @@
 // arr.fill("Tere Namm") ;
 // console.log(arr);
 
-let arr = [10, 20, 30 ] ;
-let varr = arr.copyWithin(0, 1)
-console.log(varr);
+// let arr = [10, 20, 30 ] ;
+// let varr = arr.copyWithin(0, 1)
+// console.log(varr);
 // console.log(arr);
+
+//ForEach Loop [ iterate Array]
+
+// let arr = [10, 20, 30, 40, 50];
+// arr.forEach((num) => {
+//   console.log(num);
+// });
+
+// let arr = [10, 20, 30, 40, 50];
+// arr.forEach((num, index, arr) => { // have three parameter
+//   console.log(num, index, arr);
+// });
+
+//Sum of Array
+// let arr = [10, 20, 30, 40, 50];
+// let sum = 0 ;
+// arr.forEach((num) =>{
+
+//         sum += num ;
+// })
+// console.log("Sum = ",sum);
