@@ -92,15 +92,18 @@
 // console.log(sec);
 
 //assign
-// let obj = {
-//     name : "Rohit",
-//     age : 21
-// }
 // let obj1 = {
-//     age : 22
+//     name : "Rohit",
+//     dob : {
+//         year : 2005,
+//         date : 25,
+//         month : 3
+//     }
 // }
-// let obj2 = Object.assign({}, obj, obj1)
+// let obj2 = Object.assign({}, obj1)
+// obj2.dob.date = 22 ; // change because it do shallow copy
 // console.log(obj2); // overwrite age of obj by obj1
+// console.log(obj1); // overwrite age of obj by obj1
 
 //this
 // let obj = {
@@ -118,11 +121,11 @@
 // obj.abc()
 
 //Loop
-let obj = {
-  name: "Rohit",
-  age: 22,
-  course: "MERN",
-};
+// let obj = {
+//   name: "Rohit",
+//   age: 22,
+//   course: "MERN",
+// };
 // for (let key in obj) {
 //   console.log(key, " = ", obj[key]);
 // }
@@ -138,4 +141,119 @@ let obj = {
 
 // console.log(Object.hasOwn(obj, "name"));
 
-console.log("name" in obj);
+// console.log("name" in obj);
+
+// const s1 = Symbol("123") ;
+// const s2 = Symbol("123") ;
+// console.log( s1 == s2);
+// console.log( s1 === s2);
+
+//DEEP COPY
+
+// const obj1 = {
+//   name: "Rohit",
+//   dob: {
+//     date: 25,
+//     month: 3,
+//     year: 2005,
+//   },
+// };
+// const obj2 = structuredClone(obj1);
+// obj1.dob.date = 22;
+// console.log(obj2);
+// console.log(obj1);
+
+//FREEZE [Not Done Modify, add and delete]
+// let obj = {
+//   name : "Rohit",
+//   age : 21
+// }
+// Object.freeze(obj)
+// obj.rollno = 21 ;
+// obj.name = "Rohit Sisodiya"
+// delete obj.age ;
+
+// console.log(obj);
+// console.log(Object.isFrozen(obj));
+
+//SEAL [Only Modify]
+// let obj = {
+//   name : "Rohit",
+//   age : 21
+// }
+// Object.seal(obj)
+// obj.rollno = 21 ;
+// obj.name = "Rohit Sisodiya"
+// delete obj.age ;
+
+// console.log(obj);
+// console.log(Object.isSealed(obj));
+
+//PREVENTEXTENSIONS [Modify, Delete]
+// let obj = {
+//     name : "Rohit",
+//     age : 25
+// }
+// Object.preventExtensions(obj) ;
+// obj.rollno = 32 ;
+// obj.age = 35;
+// delete obj.name ;
+
+// console.log(obj);
+// console.log(Object.isExtensible(obj));
+
+//DESTRUCTURING
+// let obj = {
+//   name : "Rohit",
+//   age : 21,
+//   rollno : 7274
+// }
+
+//First Way ( Easy Way )
+// let a = obj.name
+// let b = obj.age
+
+// console.log(a, b);
+
+//Second Way
+// const { name : myName, age: myAge} = obj ; //same name as keys
+// console.log(myName, myAge);
+  //Using rest
+
+  // const{ name, ...rest} = obj ;
+  // console.log(name, rest);
+  
+
+//OPTIONAL CHAINING(?.)
+  // let obj = {
+
+  //     name : "Rohit",
+  //     age : 22
+  // }
+  // console.log(obj.name);
+  // // console.log(obj.address.city); //Shows Error
+  // console.log(obj.address?.city ); 
+  
+
+//NULLISH COALESCING OPERATOR.(??)
+
+// console.log(10 ?? undefined);
+// console.log(10 ?? null);
+// console.log(undefined ?? null);
+// console.log("" ?? 52);
+
+/***************************************** */
+  // let obj = { name : "abc"} ;
+  // let obj1 = { name : "abc"} ;
+  // console.log( obj == obj1);//false [Not Same Reference]
+  // console.log( obj === obj1);//false
+    
+    // let obj = { name : "abc"}
+    // let obj1 = obj ;
+    // console.log( obj === obj1);//True[Same Reference]
+    
+  
+
+
+  
+  

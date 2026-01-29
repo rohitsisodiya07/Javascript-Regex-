@@ -3,3 +3,10 @@
 ( function () {
     console.log("hey");   
 })();  
+
+//Arrow Function
+
+(() => {
+    console.log("Hello, Morning");
+    
+})();

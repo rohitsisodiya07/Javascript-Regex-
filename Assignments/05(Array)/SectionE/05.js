@@ -7,7 +7,7 @@
         
 //String to Array
 
-    // let str = "Rohit Aman Neha" ;
-    // let arr = str.split(" ") ;
-    // console.log(arr);
+    let str = "Rohit Aman Neha" ;
+    let arr = str.split(" ") ;
+    console.log(arr);
     

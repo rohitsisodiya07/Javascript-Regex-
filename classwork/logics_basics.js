@@ -180,10 +180,10 @@ let nam = "Rohit Sisodiya Rohit Sisodiya";
 //Object
 
 //create
-const obj = {
-  name: "Rohit",
-  age: 23,
-};
+// const obj = {
+//   name: "Rohit",
+//   age: 23,
+// };
 
 //read
 // console.log(obj["name"]);
@@ -213,13 +213,232 @@ const obj = {
 //   console.log(key);
 // }
 
-for( let [key,value] of Object.entries(obj)){
-
-    console.log(key, value);
-    
-}
+// for (let [key, value] of Object.entries(obj)) {
+//   console.log(key, value);
+// }
 
 //Destructuring of Object
 // const { name, age } = obj;
 
 // console.log(name, age);
+
+// Methods in Object
+
+// let obj = {
+//   name : "Rohit Sisodiya",
+//   age : 21,
+//   email : "rohitsisodiya2503@gmail.com",
+//   greet : function(){
+//     console.log(`Hey!!! Welcome in Methods ${this.name}`);
+//     return 21 ;
+//   }
+// }
+// // obj.greet() ;
+// const val = obj.greet() ;
+// console.log(val);
+
+//Nested Object
+// let obj = {
+//   name: "Rohit",
+//   age: 21,
+//   address: {
+//     city: "Jaipur",
+//     state: "Rajasthan",
+//   },
+// };
+// console.log(obj.address.city);
+
+//Shallow Copy [Not Copy on more than one level ]
+
+// let obj2 = { ...obj };
+
+// obj2.address.city = "Ajmer"; // change in actual object
+// console.log(obj);
+// console.log(obj2);
+
+//Deep Copy
+// let obj2 = structuredClone(obj) ;
+// obj2.address.city = "Ajmer"; // Not Change in Actual Object Because of Deep Copy.
+// console.log(obj);
+// console.log(obj2);
+
+//key : string || symbol
+const sym = Symbol("id");
+let obj = {
+  name: "Rohit",
+  0: 10,
+  1: 20,
+  [sym]: "Hello Boss!!",
+};
+// console.log(obj[sym]);
+
+// console.log(obj[0]);
+// console.log(obj["1"]);
+
+let arr = [10, 20, 30, 40]; //Array Also Store as Object Key Value
+// arr {
+//     0 : 10,
+//     1 : 20,
+//     3 : 30,
+//     4 : 40
+// }
+
+// Function
+//function declaration
+// function greet() {
+//   console.log("Hey! I am Function");
+// }
+// greet()
+
+//For not write num para again and again we use rest opeartor
+// function getSum(num1, num2, num3 = 0) {
+//   return num1 + num2 + num3;
+// }
+// console.log(getSum(2, 4));
+// console.log(getSum(2, 4, 6));
+
+//Rest Operator Convert Values into Array
+// function getSum(...num) {
+//   let sum = 0;
+//   for (let value of num) {
+//     sum += value;
+//   }
+//   return sum;
+// }
+// console.log(getSum(12, 34));
+// console.log(getSum(12, 34, 21, 20, 41, 30));
+
+//Rest or Spread Operator
+
+// let arr1 = [10, 20, 30, 40, 50];
+// let arr2 = [100, 200, 300] ;
+
+//rest
+// const [one, two, ...num] = arr1;
+// console.log(one, two, num);
+
+//spread
+// let arr3 = [...arr1, ...arr2]
+// console.log(arr3);
+
+//Types of Function Declare
+//1. Function Declaration(Normal Function)
+// console.log(addNum(20, 30));
+// function addNum(num1, num2) {
+//   return num1 + num2;
+// }
+
+//2. Function Expression //Call After Declare
+// let addNum = function (a, b) {
+//   return a+b;
+// };
+// console.log(addNum(20, 20));
+
+//3. Arrow Function
+// let addNum = (a, b) => {
+//   return a+b ;
+// }
+// console.log(addNum(10, 15));
+
+// let addNum = (a, b) => a+b ; //No Need to Write return
+// console.log(addNum(10, 15));
+
+//square
+// let numSquare = num => num*num ; //No Need to use bracket if 1 parameter
+// console.log(numSquare(10));
+
+//object
+// const greeting = () =>{
+//   return {
+//     name : "Rohit",
+//     age : 21
+//   }
+// }
+// console.log(greeting());
+
+// const greeting = () => { name : "Rohit",age : 21} ; // it shows error
+//For Handle Error we use ().
+// const greeting = () => ({ name: "Rohit", age: 21 });
+// console.log(greeting());
+
+// iife function( ) // Immediately invoke Function Expression
+// (function () {
+//   console.log("hey");
+// })();
+
+// //Arrow Function
+
+// (() => {
+//   console.log("Hello, Morning");
+// })();
+
+//CallBack Function
+
+// function meet() {
+//   console.log("Hey, I am Meeting to You");
+// }
+// function dance() {
+//   console.log("hey, I am Dancing");
+// }
+// function greet(callback) {
+//   console.log("Hey, I am Greeting to You");
+//   callback();
+//   // dance() //Hardcore (reusable)
+// }
+
+// greet(meet);
+// greet(dance);
+
+//SCOPE [global, functional, block]
+// let global = 10;
+
+// function greet() {
+//   let global = 20;
+
+//   function meet() {
+//     let global = 30;
+//     console.log(global);
+//   }
+//   meet();
+// }
+// greet();
+
+// CLOSURE
+
+// function outer() {
+//   let count = 0;
+
+//   function inner() {
+//     count++;
+//     return count;
+//   }
+
+//   return inner;
+// }
+// const counter = outer();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+function bankAccount() {
+  let balance = 500;
+
+  return {
+    deposite: function (amount) {
+      if (typeof amount == "number" && amount > 0) {
+        amount += balance;
+        return balance;
+      } else console.log("Invalid Amount!!");
+    },
+    withdraw: function (amount) {
+      if (typeof amount == "number" && amount <= balance) {
+        balance -= amount;
+      } else console.log("Please Enter Valid Amount");
+    },
+    getBalance : function(){
+          return balance ;
+        }
+  };
+}
+
+
