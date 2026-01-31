@@ -275,7 +275,7 @@ let obj = {
 // console.log(obj[0]);
 // console.log(obj["1"]);
 
-let arr = [10, 20, 30, 40]; //Array Also Store as Object Key Value
+// let arr = [10, 20, 30, 40]; //Array Also Store as Object Key Value
 // arr {
 //     0 : 10,
 //     1 : 20,
@@ -420,25 +420,187 @@ let arr = [10, 20, 30, 40]; //Array Also Store as Object Key Value
 // console.log(counter());
 // console.log(counter());
 
-function bankAccount() {
-  let balance = 500;
 
-  return {
-    deposite: function (amount) {
-      if (typeof amount == "number" && amount > 0) {
-        amount += balance;
-        return balance;
-      } else console.log("Invalid Amount!!");
-    },
-    withdraw: function (amount) {
-      if (typeof amount == "number" && amount <= balance) {
-        balance -= amount;
-      } else console.log("Please Enter Valid Amount");
-    },
-    getBalance : function(){
-          return balance ;
-        }
-  };
-}
+//USECASE OF CLOSURE
+// function bankAccount() {
+//   let balance = 500;
+
+//   return {
+//     deposite: function (amount) {
+//       if (typeof amount == "number" && amount > 0) {
+//         balance += amount ;
+//         return balance;
+//       } else console.log("Invalid Amount!!");
+//     },
+//     withdraw: function (amount) {
+//       if (typeof amount == "number" && amount <= balance) {
+//         balance -= amount;
+//         return balance;
+//       } else console.log("Please Enter Valid Amount");
+//     },
+//     getBalance : function(){
+//           return balance ;
+//         }
+//   };
+// }
+// const user = bankAccount() ;
+// user.deposite(1000);
+// user.deposite(1000);
+// user.withdraw(500);
+// console.log(user.getBalance());
 
 
+
+
+//**************************************************************************** */
+//forEach()
+
+    // let arr = [10, 20, 30, 50, 51, 61, 95] ;
+
+    // arr.forEach( (num) =>{
+    //     console.log(num);
+        
+    // }) //Print all Elements
+
+    // let sum = 0 ;
+    // arr.forEach( (num) => {
+
+    //     sum += num ;
+    // })
+    // console.log(sum); //Sum of Array.
+
+    // arr.forEach( (num) => {
+
+    //     console.log(num*2);
+        
+    // }) //Multiply by 2
+    
+    // let count = 0 ;
+    // arr.forEach( (num ) => {
+
+    //     if( num % 2 == 0 ) count++ ;
+    // })
+    // console.log("Even Digits = ", count); //Count Even
+    
+
+    // arr.forEach( (num ) => {
+
+    //     if( num % 2 == 0 ) console.log(num);
+        
+    // }) //Print Only Even
+
+
+    // arr.forEach( (value, index) => {
+
+    //     console.log(`${index} => ${value}`);
+        
+    // }) //Print Index With Values
+    
+    // arr.forEach( (num, index) => {
+
+    //     arr[index] = num * num ;
+    // })
+    // console.log(arr); //Convert Array Values to Square.
+
+
+/******************************************************************** */
+//filter()
+
+    // let arr = [15, 20, 32, 41, 60, 12, 33] ;
+
+    // let newArray = arr.filter( (num) => num % 2 == 0) //Return Even Numbers
+    // console.log(newArray);
+
+    // let newArray = arr.filter( (num) => num % 2 !== 0 ) //return odd number
+    // console.log(newArray);
+
+    // let object = [ { name : "Rohit", age : 19}, { name : "Abhi", age : 17}] ;
+    // let newObject = object.filter( user => user.age >= 18)
+    // console.log(newObject);// Filter Object 
+    
+  
+//********************************************************************************** */
+//Map()
+
+      // let arr = [2, 5, 7, 8] ;
+
+      // let newArray = arr.map( (num) => num*num)
+      // console.log(newArray);//Square of element
+      
+    // let newArray = arr.map(String)
+    // console.log(newArray); //convert to string
+
+      // let obje = [ {name : "Rohit", age : 18}, { name : "Suresh", age : 21}] ;
+      // let newArray = obje.map( user => user.name)
+      // console.log(newArray);
+      
+//************************************************************************************** */
+//Reduce()
+
+    // let arr = [2, 4, 6, 8, 8, 8, 5, 10, 6, 9] ;
+    // let sum = arr.reduce( (a, b) =>{
+
+    //     return  a+b ;
+    // }, 0)
+    // console.log(sum); //Sum
+
+    // let product = arr.reduce ( (a, b) => {
+
+    //     return a*b ;
+    // }, 1)
+    // console.log(product);
+    
+    
+  // let maximum = arr.reduce( (a, b) => {
+
+  //     if( a > b) return a ;
+  //     else return b ;
+  // })
+  // console.log(maximum);
+  
+
+  // let countTotal = arr.reduce( (count, element) => {
+
+  //             return count+1;
+  // }, 0)
+  // console.log(countTotal);
+  
+  // let convertToObject = arr.reduce( (acc, curr, index) =>{
+
+  //           acc[index] = curr ;
+  //           return acc ;
+
+  // }, {})
+  // console.log(convertToObject);
+  
+
+//*************************************** */
+  //set()
+    // let arr = [12, 14, 20, 20, 14, 50, 30, 80, 14] ;
+    // let newSet = new Set(arr) ;
+    // console.log(newSet); //Remove Duplicate
+
+    //Add
+    let set = new Set ;
+    set.add(10)
+    set.add(20)
+    // set.add(30)
+    // set.add(10)
+    // console.log(set);
+
+    //Delete
+      // set.delete(20) ;
+      // console.log(set);
+      
+    //has
+      // console.log(set.has(20)) ;
+
+    //set convert to array
+    // let arr = [...set] ; 
+    // console.log(arr);
+     
+    
+
+    
+    
+    

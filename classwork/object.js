@@ -242,6 +242,14 @@
 // console.log(undefined ?? null);
 // console.log("" ?? 52);
 
+
+//NULLISH COALESCING ASSIGNMENT ( ??= )
+// let x;
+// console.log( x ??= 50 );
+
+// let y = 5 ;
+// console.log( y ??= 50 );
+
 /***************************************** */
   // let obj = { name : "abc"} ;
   // let obj1 = { name : "abc"} ;
@@ -251,6 +259,22 @@
     // let obj = { name : "abc"}
     // let obj1 = obj ;
     // console.log( obj === obj1);//True[Same Reference]
+
+    //****************************************************** */
+    // let obj = { name : "abc"}
+
+    // let obj1 = Object.create(obj) ;
+    // obj1.name = "rohit"
+
+    // console.log(obj.name);
+    // console.log(obj1.name);
+    
+  
+
+
+
+
+
     
   
 

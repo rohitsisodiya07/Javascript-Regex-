@@ -6,7 +6,7 @@
     // arr.reverse() ;
     // console.log(arr);
     
-//toReversed // Not Change in Actual Arrayu
+//toReversed // Not Change in Actual Array
 
     let arr = [12, 14, 16, 18, 20] ;
     let newArr = arr.toReversed() ;
