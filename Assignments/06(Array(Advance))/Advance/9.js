@@ -13,9 +13,6 @@ let arr = [1, 2, 3, 4, 2, 4, 5, 7, 1];
 // console.log(result);
 
 
-
-
-
 //Using Set
 let seen = new Set();
 let result = new Set();

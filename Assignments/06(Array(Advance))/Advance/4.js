@@ -15,10 +15,10 @@ let arr1 = [10, 30, 50, 40];
 
 //using filter
 
-// let result = arr.filter( num => arr1.includes(num))
-// console.log(result);
+let result = arr.filter( num => arr1.includes(num))
+console.log(result);
 
-//Using for loop
+// Using for loop
 
 // let result = [];
 

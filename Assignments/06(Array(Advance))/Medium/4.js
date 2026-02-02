@@ -6,5 +6,3 @@
         let newArr = arr.filter(Boolean)
         console.log(newArr);
         
-
-        

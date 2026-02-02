@@ -4,11 +4,3 @@
 
     let newArr = arr.map( num => num*3) ;
     console.log(newArr);
-    
-
-
-    
-    
-
-    
-    
