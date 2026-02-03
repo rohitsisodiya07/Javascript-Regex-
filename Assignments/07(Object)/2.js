@@ -1,4 +1,4 @@
-// Merge two objects using the spread operator.
+//2. Merge two objects using the spread operator.
 
 let obj = {
   name: "Rohit Sisodiya",

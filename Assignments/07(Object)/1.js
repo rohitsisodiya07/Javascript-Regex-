@@ -1,4 +1,4 @@
-// Merge two objects using Object.assign().
+//1. Merge two objects using Object.assign().
 
 let obj = {
   name: "Rohit Sisodiya",
