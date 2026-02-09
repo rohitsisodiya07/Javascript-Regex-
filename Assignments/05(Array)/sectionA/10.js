@@ -32,7 +32,7 @@
     let arr = [10, [20, 30], 40] ;
     let sec = structuredClone(arr) ;
 
-    sec[1] = 50 ; // Not Changed in Actual Because We do Deep Copy.
+    sec[0] = 50 ; // Not Changed in Actual Because We do Deep Copy.
 
     console.log(sec);
     console.log(arr);

@@ -59,11 +59,11 @@
 
 // >, <, >=, <= (Null => Number(treat null equal to 0), Undefined => NaN)
 
-// console.log( null >= 0);
-// console.log( null <= 0);
-// console.log( null > 0);
-// console.log( null < 0);
-// console.log( null == 0);
+// console.log( null >= 0);//true
+// console.log( null <= 0);//true
+// console.log( null > 0);//false
+// console.log( null < 0);//false
+// console.log( null == 0);//false
 // console.log( null >= undefined); //false
 
 // console.log( "Rohit" > "Mohit"); // true // Compare ASCII Value of R and M Firstly
@@ -98,7 +98,7 @@ let b = 295.3452;
 // console.log(b.toFixed(1)); //Convert to string, not change in actual value, return new value.
 // console.log( typeof (b.toFixed(1))); //String
 
-// console.log(b.toPrecision(5)); // how much values we want
+// console.log(a.toPrecision(5)); // how much values we want
 // console.log(typeof b.toPrecision(5)); // String
 
 // console.log(b.toString()); //convert to string
@@ -111,7 +111,7 @@ let b = 295.3452;
 // console.log(Math.abs(-4)); // Absolute ( Convert to Positive )
 // console.log(Math.PI); //Value of Pi
 // console.log(Math.LN10); //Value of Log 10
-// console.log(Math.SQRT2); //Value of Square Root of 2.
+// console.log(Math.sqrt(144)); //Value of Square Root of 2.
 // console.log(Math.ceil(3.2)); // convert to upper value
 // console.log(Math.floor(3.2)); // convert to Lower value
 // console.log(Math.max(8, 100, 500, 5000)); // give maximum value
@@ -129,6 +129,7 @@ let b = 295.3452;
 // OTP GENERATE : 4 Digit ( 1000 - 9999 ).
 
 // console.log(Math.floor(Math.random()*(9999-1000+1))+1000);
+// console.log(Math.floor(Math.random()*(6-1+1))+1);
 
 // String
 
