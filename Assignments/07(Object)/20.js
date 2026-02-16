@@ -2,10 +2,10 @@
 
     let obj = {
         1 : 15,
-        2 : 33,
-        3 : 12,
-        4 : 14,
-        5 : 11
+        3 : 33,
+        2 : 12,
+        5 : 14,
+        4 : 11
     }
     let sortedObj = Object.fromEntries( Object.entries(obj).sort( (a, b) => a[1]-b[1]) );
     console.log(sortedObj);
