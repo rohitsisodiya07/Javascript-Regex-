@@ -13,16 +13,16 @@
 
 // setInterval( ()=> console.log("Rohit"), 1000);
 
-let a = 11;
-let b = setInterval(() => {
-  a--;
-  console.log(a);
-  if (a <= 0) {
-    console.log("Congratulation!!!!");
+// let a = 11;
+// let b = setInterval(() => {
+//   a--;
+//   console.log(a);
+//   if (a <= 0) {
+//     console.log("Congratulation!!!!");
 
-    clearInterval(b);
-  }
-}, 1000);
+//     clearInterval(b);
+//   }
+// }, 1000);
 
 //CALL BACK FUNCTION ( when we do nested callback its called callback hell).
 
@@ -55,42 +55,114 @@ let b = setInterval(() => {
 
 //   .finally(() => console.log("Task Completed"));
 
-
 // Promise.resolve("Success")
 //   .then( res => console.log(res)) ;
-  
+
 //   Promise.reject("Failed")
 //     .catch( res => console.log(res)) ;
-  
-  
+
 //Promise.all
 
-  // let p1 = new Promise( (resolve, reject) => {
+// let p1 = new Promise( (resolve, reject) => {
 
-  //     setTimeout( () => {
-  //         resolve("Step-1");    
-  //     }, 1000 )
-  // })
+//     setTimeout( () => {
+//         resolve("Step-1");
+//     }, 1000 )
+// })
 
-  // let p2 = new Promise( (resolve, reject) => {
+// let p2 = new Promise( (resolve, reject) => {
 
-  //     setTimeout( () => {
-  //         resolve("Step-2");    
-  //     }, 1000 )
-  // })
+//     setTimeout( () => {
+//         resolve("Step-2");
+//     }, 1000 )
+// })
+
+// let p3 = new Promise( (resolve, reject) => {
+
+//     setTimeout( () => {
+//         reject("Step-3");
+//     }, 1000 )
+// })
+
+//   let abc = Promise.all( [p1, p2, p3] ) ;
+//   // console.log(abc);
+
+//   abc.then( res => { console.log(res) })
+//     .catch( (err) => console.log("Error : ", err) )
+//       .finally( () => console.log("Task Completed")) ;
+
+//promise.allsettled.
+
+// const p1 = Promise.resolve(1) ;
+// const p2 = Promise.reject(2) ;
+
+// Promise.allSettled([p1, p2])
+//   .then( res => console.log(res))
+//     .catch( err => console.log(err))
+
+//promise.any
+// const p1 = Promise.reject(1)
+// const p2 = Promise.resolve(2)
+
+//    Promise.allSettled([p1, p2])
+//   .then( res => console.log(res))
+//     .catch( err => console.log(err))
+
+//promise.race
+
+// let p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Step-1");
+//   }, 2000);
+// });
+
+// let p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("Step-2");
+//   }, 1000);
+// });
+
+// Promise.race([p1, p2])
+//   .then( res => console.log(res))
+//     .catch( err => console.log(err))
+
+
+//then
+
+  // Promise.resolve(10)
+  //   .then( res => console.log("res ", res), err => console.log("err ", err) )
+
+//Promise Chain
+
+  // Promise.resolve(10)
+  //   .then( res => res*5)
+  //     .then( data => data + 5)
+  //       .then( a => console.log(a))
+
+
+//ASYNC - AWAIT
+
+  // Function Declaration 
+
+  // function getuser(){
+
+  //     setTimeout(()=> console.log("Hello"), 1000) ;
+  // }
+  // async function abc(){
+  //   let a = await getuser() ;
+  // }
+  // abc()
   
-  // let p3 = new Promise( (resolve, reject) => {
 
-  //     setTimeout( () => {
-  //         reject("Step-3");    
-  //     }, 1000 )
-  // })
+  //Arrow Function
+  function abc(){
+    setTimeout(()=> console.log("Hello"), 1000) ;
+  }
 
-  //   let abc = Promise.all( [p1, p2, p3] ) ;
-  //   // console.log(abc);
+  let a = async () => {
 
-  //   abc.then( res => { console.log(res) })
-  //     .catch( (err) => console.log("Error : ", err) )
-  //       .finally( () => console.log("Task Completed")) ;
+      let b = await abc() ;
+  }
 
-    
+ a() ;
+ 
