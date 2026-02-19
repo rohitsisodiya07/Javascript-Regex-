@@ -155,14 +155,25 @@
   
 
   //Arrow Function
-  function abc(){
-    setTimeout(()=> console.log("Hello"), 1000) ;
-  }
+//   function abc(){
+//     setTimeout(()=> console.log("Hello"), 1000) ;
+//   }
 
-  let a = async () => {
+//   let a = async () => {
 
-      let b = await abc() ;
-  }
+//       let b = await abc() ;
+//   }
 
- a() ;
+//  a() ;
  
+
+async function abc() {
+  
+    try{
+        let a = await Promise.reject(10) ;
+        console.log(a);      
+    } catch (err){
+        console.log("Error Occur : ", err);  
+    }
+}
+abc() ;
