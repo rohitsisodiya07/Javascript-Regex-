@@ -167,13 +167,55 @@
 //  a() ;
  
 
-async function abc() {
+// async function abc() {
   
-    try{
-        let a = await Promise.reject(10) ;
-        console.log(a);      
-    } catch (err){
-        console.log("Error Occur : ", err);  
-    }
-}
-abc() ;
+//     try{
+//         let a = await Promise.reject(10) ;
+//         console.log(a);      
+//     } catch (err){
+//         console.log("Error Occur : ", err);  
+//     }
+// }
+// abc() ;
+
+//JSON ( Java Script Object Notation )
+//  let a = {
+//     "id" : 1,
+//     "name" : "amit",
+//     "role" : "student"
+// }
+// console.log(a);
+
+//Methods
+
+// let obj = {
+//   name : "Rohit",
+//   age : 22
+// }
+
+// let str = JSON.stringify(obj) ;
+// console.log(str);
+
+// let newObj = JSON.parse(str) ;
+// console.log(newObj);
+
+
+//Fetch Method
+
+// async function fetchData() {
+  
+//       let result = await fetch("https://fake-json-api.mock.beeceptor.com/users", {
+//         methods : 'GET'
+//       })
+//       // console.log(result);
+//       let updateResult = await result.json() ;
+//       console.log(updateResult);
+            
+// }
+// fetchData() ;
+
+fetch("https://fake-json-api.mock.beeceptor.com/users", {
+        methods : 'GET'
+}).then( res => res.json())
+  .then( result => console.log(result))
+  .catch( err => console.log(err))

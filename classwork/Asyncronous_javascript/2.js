@@ -18,14 +18,14 @@ console.log("Started....");
 
 //
 //Promise Chaining
-// fetch("https://api.github.com/users")
-//   .then((res) => {
-//     return res.json();
-//   })
+fetch("https://api.github.com/users")
+  .then((res) => {
+    return res.json();
+  })
 
-//   .then((data) => {
-//     console.log(data);
-//   });
+  .then((data) => {
+    console.log(data);
+  });
 
 console.log("Ended!!");
 
