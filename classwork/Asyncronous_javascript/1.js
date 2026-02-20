@@ -13,10 +13,10 @@
 
 // setInterval( ()=> console.log("Rohit"), 1000);
 
-// let a = 11;
+// let a = 10;
 // let b = setInterval(() => {
-//   a--;
 //   console.log(a);
+//   a--;
 //   if (a <= 0) {
 //     console.log("Congratulation!!!!");
 
