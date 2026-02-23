@@ -214,8 +214,26 @@
 // }
 // fetchData() ;
 
-fetch("https://fake-json-api.mock.beeceptor.com/users", {
-        methods : 'GET'
-}).then( res => res.json())
-  .then( result => console.log(result))
-  .catch( err => console.log(err))
+// fetch("https://fake-json-api.mock.beeceptor.com/users", {
+//         methods : 'GET'
+// }).then( res => res.json())
+//   .then( result => console.log(result))
+//   .catch( err => console.log(err))
+
+
+//Throw
+// function abc(age){
+//   if( age < 18){
+//     throw { message : "Not Eligible"} ;
+//   }
+//   return age ;
+// }
+// try{ 
+//   abc(17) ;
+// }
+// catch(err){
+//   console.log(err.message);
+  
+// }
+
+//LocalStorage

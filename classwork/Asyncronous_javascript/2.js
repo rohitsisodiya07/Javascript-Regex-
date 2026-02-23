@@ -157,16 +157,18 @@
 
   //Using Then Catch.
 
-    fetch("https://api.github.com/users")
-    .then( (response) => {
+    // fetch("https://api.github.com/users")
+    // .then( (response) => {
 
-          return response.json() ;
-    })
-    .then( (data) => {
+    //       return response.json() ;
+    // })
+    // .then( (data) => {
 
-        console.log(data) ;
-    })
-    .catch( (err) => {
+    //     console.log(data) ;
+    // })
+    // .catch( (err) => {
 
-        console.log(err) ;
-    })
+    //     console.log(err) ;
+    // })
+
+// Prototype
