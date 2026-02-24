@@ -172,3 +172,21 @@
     // })
 
 // Prototype
+
+    let obj = {
+        name : "Rohit",
+        age : 22,
+        greet :  function(){
+                console.log("Hey Boss!!");
+                
+        }
+    } 
+
+    let obj2 = {
+        name : "Sohan"
+    }
+
+ obj2.__proto__ = obj ;
+ console.log(obj2.age);
+ 
+    

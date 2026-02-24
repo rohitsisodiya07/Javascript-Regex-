@@ -236,4 +236,50 @@
   
 // }
 
-//LocalStorage
+//LocalStorage[Permanent Storage]
+// let user = { id : 1, name : "Rohit", role : "Student" }
+
+// localStorage.setItem("user", JSON.stringify(user))
+
+// let result = localStorage.getItem("user") ;
+
+// console.log(JSON.parse(result));
+
+// localStorage.removeItem("user")
+
+// localStorage.clear() ;
+
+
+//Session Storage[Temporary Storage]
+
+// let user = { id : 1, name : "Rohit" } ;
+
+// sessionStorage.setItem("user", JSON.stringify(user)) ;
+
+// let result = sessionStorage.getItem("user") ;
+
+// console.log(JSON.parse(result));
+
+
+//Cookies
+
+// let date = new Date() ;
+
+// console.log(date);
+
+// document.cookie = "name=Rohit, expires = Mon Feb 23 2026 14:19:17 GMT+0530 " ;
+
+// console.log(document.cookie);
+
+
+//Location
+
+        console.log(location.href); 
+        // location.reload() ;
+       
+        
+
+//History
+    history.back()
+    history.forward()
+    history.go()
