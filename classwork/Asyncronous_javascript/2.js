@@ -121,72 +121,98 @@
 //         }
 //         else{
 //           reject("Error AA GYI LADLE!!!") ;
-//         }       
+//         }
 //     }, 1000)
 // })
 
 // async function consumePromise(){
 
 //      try {
-      
+
 //         const response = await promiseThree ;
 //         console.log(response);
-        
+
 //      } catch (error) {
 //         console.log(error);
-        
+
 //      }
 // }
 // consumePromise() ;
 
 // Fetch API (Using Async Await)
 
-  // async function fetchApi(){
+// async function fetchApi(){
 
-  //     try {
-        
-  //         const response = await fetch("https://api.github.com/users");
-  //         const result = await response.json() ;
-  //         console.log(result);
-          
-  //     } catch (error) {
-  //         console.log(error)
-  //     }
-  // }
-  // fetchApi() ;
+//     try {
 
-  //Using Then Catch.
+//         const response = await fetch("https://api.github.com/users");
+//         const result = await response.json() ;
+//         console.log(result);
 
-    // fetch("https://api.github.com/users")
-    // .then( (response) => {
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// fetchApi() ;
 
-    //       return response.json() ;
-    // })
-    // .then( (data) => {
+//Using Then Catch.
 
-    //     console.log(data) ;
-    // })
-    // .catch( (err) => {
+// fetch("https://api.github.com/users")
+// .then( (response) => {
 
-    //     console.log(err) ;
-    // })
+//       return response.json() ;
+// })
+// .then( (data) => {
+
+//     console.log(data) ;
+// })
+// .catch( (err) => {
+
+//     console.log(err) ;
+// })
 
 // Prototype
 
-    let obj = {
-        name : "Rohit",
-        age : 22,
-        greet :  function(){
-                console.log("Hey Boss!!");
-                
-        }
-    } 
+//     let obj = {
+//         name : "Rohit",
+//         age : 22,
+//         greet :  function(){
+//                 console.log("Hey Boss!!");
 
-    let obj2 = {
-        name : "Sohan"
+//         }
+//     }
+//     let obj2 = {
+//         name : "Sohan"
+//     }
+
+//  obj2.__proto__ = obj ;
+//  console.log(obj2.age);
+
+class person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    return ("Namaste " + this.name);
+  }
+}
+
+class person2 extends person{
+
+    constructor( name, age, balance){
+        super(name, age) ;
+        this.balance = balance ;
     }
 
- obj2.__proto__ = obj ;
- console.log(obj2.age);
- 
-    
+    checkBalance(){
+       return this.balance ;
+    }
+}
+
+let per1 = new person("Rohit", 22);
+let per2 = new person2("Rohit Sisodiya", 22, 15000);
+
+console.log(per2.greet());
+console.log(per2.checkBalance());
