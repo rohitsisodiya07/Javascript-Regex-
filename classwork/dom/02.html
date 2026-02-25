@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+    <style>
+      div {
+        background-color: aqua;
+        margin: 40px;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="history.back()">Back</button>
+    <button onclick="history.forward()">Forward</button>
+    <button onclick="location.reload()">Reload</button>
+    <button
+      onclick="location.href = 'https://www.youtube.com/watch?v=9KwCG9aVwvQ'"
+    >
+      Go Youtube
+    </button>
+
+    <script>
+      let check = navigator.onLine;
+      if (!check) {
+        alert("User is Offline");
+      } else {
+        // location.href = "https://www.notion.so/Lecture-21-Prototype-and-Class-in-javascript-2a73a78e0e2280f9a76ad7141e3bd3b6" ;
+      }
+      let result = confirm("You Want to Stay or Not!!");
+      if (!result) {
+        setTimeout(() => {
+          location.href = "https://www.youtube.com/watch?v=9KwCG9aVwvQ";
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

@@ -126,35 +126,32 @@
 //   .then( res => console.log(res))
 //     .catch( err => console.log(err))
 
-
 //then
 
-  // Promise.resolve(10)
-  //   .then( res => console.log("res ", res), err => console.log("err ", err) )
+// Promise.resolve(10)
+//   .then( res => console.log("res ", res), err => console.log("err ", err) )
 
 //Promise Chain
 
-  // Promise.resolve(10)
-  //   .then( res => res*5)
-  //     .then( data => data + 5)
-  //       .then( a => console.log(a))
-
+// Promise.resolve(10)
+//   .then( res => res*5)
+//     .then( data => data + 5)
+//       .then( a => console.log(a))
 
 //ASYNC - AWAIT
 
-  // Function Declaration 
+// Function Declaration
 
-  // function getuser(){
+// function getuser(){
 
-  //     setTimeout(()=> console.log("Hello"), 1000) ;
-  // }
-  // async function abc(){
-  //   let a = await getuser() ;
-  // }
-  // abc()
-  
+//     setTimeout(()=> console.log("Hello"), 1000) ;
+// }
+// async function abc(){
+//   let a = await getuser() ;
+// }
+// abc()
 
-  //Arrow Function
+//Arrow Function
 //   function abc(){
 //     setTimeout(()=> console.log("Hello"), 1000) ;
 //   }
@@ -165,15 +162,14 @@
 //   }
 
 //  a() ;
- 
 
 // async function abc() {
-  
+
 //     try{
 //         let a = await Promise.reject(10) ;
-//         console.log(a);      
+//         console.log(a);
 //     } catch (err){
-//         console.log("Error Occur : ", err);  
+//         console.log("Error Occur : ", err);
 //     }
 // }
 // abc() ;
@@ -199,18 +195,17 @@
 // let newObj = JSON.parse(str) ;
 // console.log(newObj);
 
-
 //Fetch Method
 
 // async function fetchData() {
-  
+
 //       let result = await fetch("https://fake-json-api.mock.beeceptor.com/users", {
 //         methods : 'GET'
 //       })
 //       // console.log(result);
 //       let updateResult = await result.json() ;
 //       console.log(updateResult);
-            
+
 // }
 // fetchData() ;
 
@@ -220,7 +215,6 @@
 //   .then( result => console.log(result))
 //   .catch( err => console.log(err))
 
-
 //Throw
 // function abc(age){
 //   if( age < 18){
@@ -228,12 +222,12 @@
 //   }
 //   return age ;
 // }
-// try{ 
+// try{
 //   abc(17) ;
 // }
 // catch(err){
 //   console.log(err.message);
-  
+
 // }
 
 //LocalStorage[Permanent Storage]
@@ -249,7 +243,6 @@
 
 // localStorage.clear() ;
 
-
 //Session Storage[Temporary Storage]
 
 // let user = { id : 1, name : "Rohit" } ;
@@ -259,7 +252,6 @@
 // let result = sessionStorage.getItem("user") ;
 
 // console.log(JSON.parse(result));
-
 
 //Cookies
 
@@ -271,15 +263,23 @@
 
 // console.log(document.cookie);
 
-
 //Location
 
-        console.log(location.href); 
-        // location.reload() ;
-       
-        
+// console.log(location.href);
+// console.log(location.path);
 
 //History
-    history.back()
-    history.forward()
-    history.go()
+// history.back()
+// history.forward()
+// history.go()
+
+//Navigator
+
+// console.log(navigator.language);
+// console.log(navigator.onLine);
+// console.log(navigator.userAgent);
+
+// navigator.geolocation.getCurrentPosition((position) => {
+//   console.log(position.coords.latitude);
+//   console.log(position.coords.longitude);
+// });
