@@ -283,3 +283,79 @@
 //   console.log(position.coords.latitude);
 //   console.log(position.coords.longitude);
 // });
+
+
+
+
+// async function newFun(){
+    
+//         return 10 ;
+
+// }
+// newFun().then( res => console.log(res))
+
+// const getData = () => {
+//     setTimeout( () =>{
+
+//             console.log("Hello JavaScript");
+            
+//     }, 20000)
+// }
+// async function fetchData() {
+
+//     let result = await getData() ;
+//     return result
+// }
+// fetchData().then( () => console.log("Promise Resolved"))
+
+
+// let promise = new Promise( (resolve, reject) => {
+
+//         setTimeout( () => {
+
+//                 let success = false ;
+//                 if(success){
+//                     resolve("Success") ;
+//                 }
+//                 else {
+//                     reject("Decline")
+//                 }
+//         }, 2000)
+// })
+
+// async function printData() {
+    
+//         try{
+//         let result = await promise ;
+//         console.log(result);
+//         }
+//         catch (err){
+//             console.log(err);   
+//         }     
+// }
+// printData()
+
+    let arr = [] ;
+
+async function getApi(params) {
+    
+        try{
+            let response = await fetch("https://api.github.com/users") ;
+            let result = await response.json() ;
+            result.forEach(val => {
+                arr.push(val)
+            });
+            // console.log(result);
+            
+            
+        }
+        catch(err){
+            console.log(err);    
+        }
+}
+// getApi() ;
+console.log(arr);
+// let para = document.createElement("p") ;
+// para.textContent = getApi()
+// document.body.append(para)
+

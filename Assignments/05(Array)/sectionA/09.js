@@ -20,7 +20,7 @@
     let names = ["Rohit", "Akshay", "Harish"] ;
     names.forEach( (value, index) => {
 
-        console.log(value); // Values
-        console.log(index); // Index
+        console.log(value, index); // Values, index
+        // console.log(index); // Index
         
     }) // Mostly Used

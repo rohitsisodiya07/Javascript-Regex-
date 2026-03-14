@@ -7,5 +7,6 @@ console.log(Array.isArray(arr)); // Return True
 let num = 10 ;
 
 console.log(Array.isArray(num)); // Return False
+console.log(Array.isArray(5)); // Return False
 
  

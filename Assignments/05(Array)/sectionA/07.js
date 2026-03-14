@@ -4,5 +4,6 @@
 
 
 
-let arr = [] ; // This is an Empty Array
+let arr = [] ;
+console.log(arr); // This is an Empty Array
 
