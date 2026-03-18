@@ -587,6 +587,24 @@ const db = {
 
 };
     
+
+  // let result = db.vendors.map( (res) => {
+
+  //       let product = db.products.filter( res1 => res1.vendorId === res.vendorId)
+  //         .map( res => res.name) 
+  //         return ({
+  //             vendorName : res.name,
+  //             productName : product        
+  //            })      
+  //       })
+  // console.log(result);
+
+  // let result = db.vendors.map( (res) => res.vendorId);
+  // let ans = db.products.filter( res => result.includes(res.vendorId)).map( res => res.name)
+  
+  // console.log(ans);
+  // console.log(result);
+  
     
 // let result = db.products.filter( res => (res.price > 10000)) ;
 // // console.log(result);
@@ -634,19 +652,19 @@ const db = {
 // console.log(ans);
 
 
-let result = db.users.map( res => res.email).map( res => {
+// let result = db.users.map( res => res.email).map( res => {
 
-    let ans = "" ;
-    ans += res[0] ;
-    let index = res.indexOf("@") ;
-    for( let i = 1; i < index ; i++){
+//     let ans = "" ;
+//     ans += res[0] ;
+//     let index = res.indexOf("@") ;
+//     for( let i = 1; i < index ; i++){
 
-        ans += "*" ;
-    }
-    ans += res.slice(index) ;
-    return ans ;
-});
-console.log(result);
+//         ans += "*" ;
+//     }
+//     ans += res.slice(index) ;
+//     return ans ;
+// });
+// console.log(result);
 
 
 
