@@ -13,6 +13,3 @@
             return true ;
     })
     console.log(newArr);
-    
-    
-    

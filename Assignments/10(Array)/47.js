@@ -1,4 +1,4 @@
-// 46. 47. Find object with min property
+//47. Find object with min property
 
     let arr = [{name:'A',score:80},{name:'B',score:95},{name:'C',score:70}] ;
 

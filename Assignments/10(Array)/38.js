@@ -7,5 +7,3 @@
     let result = [...arr1, ...arr2].sort() ;
 
     console.log(result);
-    
-    

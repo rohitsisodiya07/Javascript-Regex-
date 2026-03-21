@@ -1,4 +1,4 @@
-// 16. Sort array Descending
+// 17. Sort array Descending
 
     let arr = [5,2,9,1,3] ;
 
