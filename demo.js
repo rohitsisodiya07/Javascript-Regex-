@@ -393,17 +393,20 @@ let check = "rohit"
 // sumeven(522546025)
 
 
-function checkarm(num){
+// function checkarm(num){
 
-    let check = num ;
-    let arm = 0 ;
-    while(num){
+//     let check = num ;
+//     let arm = 0 ;
+//     while(num){
 
-        let last = num % 10 ;
-        arm = last * last * last + arm ;
-        num = parseInt(num / 10) ;
-    }
-    if( check == arm ) console.log("ArmStrong");
-    else console.log("Not ArmStrong");  
-}
-checkarm(407)
+//         let last = num % 10 ;
+//         arm = last * last * last + arm ;
+//         num = parseInt(num / 10) ;
+//     }
+//     if( check == arm ) console.log("ArmStrong");
+//     else console.log("Not ArmStrong");  
+// }
+// checkarm(407)
+    
+    
+    

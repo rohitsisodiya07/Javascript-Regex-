@@ -7,8 +7,8 @@
     // to fixed
         let money = 152.6525554562 ;
         let dec = 142
-        console.log(money.toFixed());//153
-        console.log(dec.toFixed(2));//142.00
+        // console.log(money.toFixed());//153
+        // console.log(dec.toFixed(2));//142.00
         // console.log(dec.toPrecision())
     //parseInt
         // let float = 45.115 ;

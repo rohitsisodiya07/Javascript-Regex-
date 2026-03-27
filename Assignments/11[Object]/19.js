@@ -1,8 +1,5 @@
 // 19. Create a function that receives an object and prints all values.
 
-
-
-
     let obj = {
         name :"Rohit",
         age : 21,
