@@ -3,9 +3,9 @@
 
 //Using Splice
 
-    // let arr = [10, 20, 30] ;
-    // arr.splice(1, 0, 15) ;
-    // console.log(arr);
+    let arr = [10, 20, 30] ;
+    arr.splice(1, 0, 15) ;
+    console.log(arr);
     
 
 
