@@ -52,12 +52,12 @@
 // obj = Object.assign({}, obj, obj2)
 // console.log(obj);
 
-let arr = [
-    { name : "Rohit"},
-    { age : 21},
-    { stream : "MERN",}
-]
-let obj = { data : "MERN Data"};
+// let arr = [
+//     { name : "Rohit"},
+//     { age : 21},
+//     { stream : "MERN",}
+// ]
+// let obj = { data : "MERN Data"};
 
-arr.push(obj);
-console.log(arr);
+// arr.push(obj);
+// console.log(arr);

@@ -123,3 +123,77 @@
 // let duplicate = arr.filter((item, index) => arr.indexOf(item) !== index);
 
 // console.log([...new Set(duplicate)]);
+
+//Write a JavaScript program to reverse a string.
+
+// let str = "rohit" ;
+// let rev = str.split("").reverse("").join("");
+// console.log(rev);
+
+// How do you merge two objects in JavaScript?
+// obj1 = { name: "Rohit" };
+// obj2 = { age: 21 };
+
+//     let ans = {...obj1, ...obj2} ;
+//     console.log(ans);
+
+// Write a program to find the largest number in an array.
+// let arr = [4, 7, 1, 9, 2];
+
+// let largest = Math.max(...arr);
+// console.log(largest);
+
+// Write a program to check whether a string is palindrome or not.
+// let str = "madam"
+// let ans = str.split("").reverse().join("") ;
+// if( str === ans ) console.log("Pallindrome");
+// else console.log("Not Pallindrome");
+
+// Write a program to count total keys in an object.
+
+// let obj = {
+//   name: "Rohit",
+//   age: 21,
+//   city: "Jaipur",
+// };
+
+//     let count = Object.keys(obj).length ;
+//     console.log(count);
+    
+
+// Write a program to find the sum of all elements in an array.
+
+    // let arr = [1,2,3,4] ;
+    // let sum = arr.reduce( (acc, curr) => {
+    //     return acc+curr ;
+    // }, 0) ;
+    // console.log(sum);
+    
+// Write a program to count vowels in a string.
+
+    // let str = "javascript" ;
+    // let vowels = "aeiouAEIOU" ;
+    // let count = 0 ;
+    // for( let val of str){
+
+    //     if(vowels.includes(val)){
+    //         count++;
+    //     }
+    // }
+    // console.log(count);
+    
+// Write a program to convert an object into an array.
+//     let obj = {
+//    name: "Rohit",
+//    age: 21 ;
+// }
+
+//     let arr = Object.entries(obj) ;
+//     console.log(arr);
+    
+// Write a program to find the second largest number in an array.
+    let arr = [10, 5, 8, 20, 15] ;
+
+    let second = [...new Set(arr)].sort( (a, b) => b - a)[1] ;
+    console.log(second);
+    
