@@ -16,7 +16,7 @@
 
 ///////////////////////////////////////////////////////////
 
-// Check whether a string is a palindrome or not.
+//2. Check whether a string is a palindrome or not.
 
 // const str = "maadaam";
 
@@ -39,4 +39,64 @@
 
 
 ///////////////////////////////////////////////////////////
-// Count the number of vowels in a string.
+
+//3. Count the number of vowels in a string.
+// const str = "javascript";
+
+// const vowels = 'aeiouAEIOU';
+// let count = 0;
+
+// for (let ch of str) {
+//     if (vowels.includes(ch)) {
+//         count++;
+//     }
+// }
+// console.log(">>>>>Total Vowels = ", count);
+
+
+///////////////////////////////////////////////
+
+// 4.Count the frequency of each character in a string.
+// const str = "javascript";
+// let obj = {};
+// for (let ch of str) {
+//     if (obj[ch]) {
+//         obj[ch]++;
+//     }
+//     else {
+//         obj[ch] = 1;
+//     }
+// }
+// console.log(obj);
+
+// const map = new Map();
+
+// for (let ch of str) {
+//     map.set(ch, (map.get(ch) || 0) + 1);
+// }
+
+//**************************************************** */
+
+//5.Find the first non-repeating character in a string.
+// const str = "aabbcde";
+// let obj = {};
+// for (let ch of str) {
+//     if (obj[ch]) {
+//         obj[ch]++;
+//     }
+//     else {
+//         obj[ch] = 1;
+//     }
+// }
+// for (let ch of str) {
+//     if (obj[ch] === 1) {
+//         console.log(ch);
+//         return;
+
+//     }
+// }
+
+
+
+//********************************************* */
+//6. First Repeating Character
