@@ -278,3 +278,29 @@
 // }
 
 // console.log(longestWord);
+
+//********************************************* */
+// 14. Shortest Word 
+// const str = "I am learning JavaScript";
+// let shortestWord = "";
+// let count = Infinity;
+
+// const arr = str.split(" ");
+
+// for (let word of arr) {
+//     if (word.length < count) {
+//         shortestWord = word
+//         count = word.length;
+//     }
+// }
+
+// console.log(shortestWord);
+
+//*********************************************** */
+//15. Count Words
+
+// const str = "I   am   learning   JavaScript";
+
+// const arr = str.trim().split(/\s+/);
+
+// console.log(arr.length);
