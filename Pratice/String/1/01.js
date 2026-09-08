@@ -304,3 +304,87 @@
 // const arr = str.trim().split(/\s+/);
 
 // console.log(arr.length);
+
+//************************************************* */
+//16.Remove All Spaces
+// const str = "hello world javascript";
+
+// let result = '';
+// for (let ch of str) {
+
+//     if (ch !== ' ') {
+//         result += ch;
+//     }
+// }
+// console.log(result);
+
+//************************************** */
+// 17. Count Digits, Alphabets & Special Characters
+
+// const str = "abc123@#";
+
+// let digits = 0;
+// let alphabet = 0;
+// let special = 0;
+// for (let ch of str) {
+
+//     if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || ch === ' ') {
+//         alphabet++;
+//     }
+//     else if (ch >= '0' && ch <= '9') {
+//         digits++;
+//     }
+//     else {
+//         special++;
+//     }
+// }
+// console.log("Digits = ", digits);
+// console.log("Aplhabets = ", alphabet);
+// console.log("Special Character = ", special);
+
+
+//*************************************************** */
+//18.Remove Special Characters
+// const str = "hello@world#123!";
+
+// let result = '';
+
+// for (let ch of str) {
+//     if (((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9'))) {
+//         result += ch;
+//     }
+// }
+// console.log(result);
+
+//*********************************** */
+//19. Maximum Occurring Character
+// const str = "javascript";
+
+// let obj = {};
+// for (let ch of str) {
+//     if (obj[ch]) {
+//         obj[ch]++;
+//     }
+//     else {
+//         obj[ch] = 1;
+//     }
+// }
+
+// let max = -Infinity ;
+// let char ;
+// for(let key in obj){
+
+//     if(obj[key] >= max){
+//         max = obj[key] ;
+//         char = key ;
+//     }
+// }
+
+// console.log(max);
+// console.log(char);
+
+//********************************** */
+//20. String Compression
+const str = "aaabbcccc";
+
+let o
