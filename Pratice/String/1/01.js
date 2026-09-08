@@ -385,6 +385,45 @@
 
 //********************************** */
 //20. String Compression
-const str = "aaabbcccc";
+// const str = "aaabbcccc";
 
-let o
+// let result = "";
+// let count = 1;
+
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i + 1]) {
+//         count++;
+//     } else {
+//         result += str[i] + count;
+//         count = 1;
+//     }
+// }
+
+// console.log(result);
+
+//******************************* */
+//21. Capitalize First Letter of Every Word
+const str = "hello world javascript";
+
+const convertUpper = (word) => {
+    return String.fromCharCode(word.charCodeAt(0) - 32) + word.slice(1);
+};
+
+let result = '';
+let word = '';
+
+for (let ch of str) {
+    if (ch !== ' ') {
+        word += ch;
+    } else {
+        result += convertUpper(word) + ' ';
+        word = '';
+    }
+}
+
+// Handle last word
+if (word) {
+    result += convertUpper(word);
+}
+
+console.log(result);
