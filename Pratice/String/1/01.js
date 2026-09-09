@@ -403,27 +403,97 @@
 
 //******************************* */
 //21. Capitalize First Letter of Every Word
-const str = "hello world javascript";
+// const str = "hello world javascript";
 
-const convertUpper = (word) => {
-    return String.fromCharCode(word.charCodeAt(0) - 32) + word.slice(1);
-};
+// const convertUpper = (word) => {
+//     return String.fromCharCode(word.charCodeAt(0) - 32) + word.slice(1);
+// };
 
-let result = '';
-let word = '';
+// let result = '';
+// let word = '';
 
-for (let ch of str) {
-    if (ch !== ' ') {
-        word += ch;
-    } else {
-        result += convertUpper(word) + ' ';
-        word = '';
+// for (let ch of str) {
+//     if (ch !== ' ') {
+//         word += ch;
+//     } else {
+//         result += convertUpper(word) + ' ';
+//         word = '';
+//     }
+// }
+
+// // Handle last word
+// if (word) {
+//     result += convertUpper(word);
+// }
+
+// console.log(result);
+
+//*********************************************** */
+//22. First Letter Uppercase
+
+// const str = "javascript";
+
+// let newString = String.fromCharCode(str[0].charCodeAt(0) - 32) + str.slice(1)
+// console.log(newString);
+
+//***************************************** */
+//23. Remove Extra Spaces
+
+// const str = "  hello    world   javascript  ";
+
+// let result = "";
+// let previousSpace = false;
+
+// for (let ch of str) {
+//     if (ch === " ") {
+//         if (!previousSpace && result.length > 0) {
+//             result += ch;
+//         }
+//         previousSpace = true;
+//     } else {
+//         result += ch;
+//         previousSpace = false;
+//     }
+// }
+
+// console.log(result);
+
+//************************************************** */
+//24. Check if String Contains Only Digits
+
+// const str = "123456";
+
+// for (let ch of str) {
+
+//     if (!(ch >= '0' && ch <= '9')) {
+//         console.log('false');
+//         return;
+//     }
+// }
+// console.log('true');
+
+//************************************ */
+//25. String Rotation
+
+// const str1 = "abcde";
+// const str2 = "cdeab";
+
+// if (
+//     str1.length === str2.length &&
+//     (str1 + str1).includes(str2)
+// ) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+//*************************************** */
+//26. Find All Substrings
+
+const str = "abc";
+
+for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+        console.log(str.slice(i, j));
     }
 }
-
-// Handle last word
-if (word) {
-    result += convertUpper(word);
-}
-
-console.log(result);
