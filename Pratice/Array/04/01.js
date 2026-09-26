@@ -59,3 +59,18 @@
 // console.log(small);
 
 //**************************************** */
+// Question 5 — Count Even and Odd Numbers
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let even = 0;
+let odd = 0;
+
+for (let ch of arr) {
+    if (ch % 2 == 0) {
+        even++;
+    }
+    else {
+        odd++;
+    }
+}
+console.log(even, odd);
